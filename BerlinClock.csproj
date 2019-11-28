@@ -50,6 +50,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BDD\BerlinClockFeatureSteps.cs" />
+    <Compile Include="Classes\BerlinClock\BerlinClockHours.cs" />
+    <Compile Include="Classes\BerlinClock\BerlinClockLamp.cs" />
+    <Compile Include="Classes\BerlinClock\BerlinClockMinutes.cs" />
+    <Compile Include="Classes\BerlinClock\BerlinClockPart.cs" />
+    <Compile Include="Classes\BerlinClock\BerlinClockSeconds.cs" />
+    <Compile Include="Classes\BerlinClock\Factories\BerlinClockHoursPartsFactory.cs" />
+    <Compile Include="Classes\BerlinClock\Factories\BerlinClockMinutesPartsFactory.cs" />
+    <Compile Include="Classes\BerlinClock\Factories\BerlinClockSecondsPartFactory.cs" />
+    <Compile Include="Classes\BerlinClock\ToBerlinClockTimeConverter.cs" />
+    <Compile Include="Classes\Color.cs" />
+    <Compile Include="Classes\IDisplayable.cs" />
+    <Compile Include="Classes\State.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\BerlinClockFeatureSteps.feature.cs">
       <AutoGen>True</AutoGen>
