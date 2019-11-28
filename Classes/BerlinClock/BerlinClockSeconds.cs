@@ -16,7 +16,7 @@ namespace BerlinClock.Classes.BerlinClock
 
         public string Get(int seconds)
         {
-            return string.Join(Environment.NewLine, ClockParts.Select(x => x.Display(seconds)));
+            return string.Join(Environment.NewLine, ClockParts.Select(x => x.Get(seconds)));
         }
 
         public static BerlinClockSeconds Create()

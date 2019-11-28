@@ -60,7 +60,7 @@
     <Compile Include="Classes\BerlinClock\Factories\BerlinClockSecondsPartFactory.cs" />
     <Compile Include="Classes\BerlinClock\ToBerlinClockTimeConverter.cs" />
     <Compile Include="Classes\Color.cs" />
-    <Compile Include="Classes\IDisplayable.cs" />
+    <Compile Include="Classes\ITimeUnitProvider.cs" />
     <Compile Include="Classes\State.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\BerlinClockFeatureSteps.feature.cs">

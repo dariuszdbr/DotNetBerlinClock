@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace BerlinClock.Classes.BerlinClock
 {
-    public class BerlinClockPart
+    public class BerlinClockPart : ITimeUnitProvider
     {
         private readonly Func<int, int> _lampsToSwitchOn;
         private List<BerlinClockLamp> Lamps { get; }
@@ -15,7 +15,7 @@ namespace BerlinClock.Classes.BerlinClock
             Lamps = lamps.ToList();
         }
 
-        public string Display(int units)
+        public string Get(int units)
         {
             Enumerable.Range(0, _lampsToSwitchOn(units)).ToList().ForEach(index => Lamps[index].SwitchOn());
 
